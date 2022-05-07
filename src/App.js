@@ -6,6 +6,7 @@ import Register from './pages/Authonication/Register/Register';
 import RequireAuth from './pages/Authonication/RequireAuth/RequireAuth';
 import Blog from './pages/Blog/Blog';
 import Contact from './pages/Contact/Contact';
+import Categories from './pages/Home/Categories/Categories';
 import Home from './pages/Home/Home/Home';
 import NotFound from './pages/NotFound/NotFound';
 import Footer from './pages/Shared/Footer/Footer';
@@ -22,7 +23,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
-        
+        <Route path='/categories' element={<Categories></Categories>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/contact' element={<Contact></Contact>}></Route>
