@@ -4,6 +4,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import './Header.css';
 
 const Header = () => {
 
@@ -18,12 +19,11 @@ const Header = () => {
             <>
                 <Navbar bg="info" variant="dark" expand={true}>
                     <Container>
-                        <Navbar.Brand href="/">ADANA CATERING SERVICE</Navbar.Brand>
+                        <Navbar.Brand href="/">ALZOYA BOOKS MANAGEMENT</Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     
                         <Nav className="ms-auto">
                             <Nav.Link href="home" className='text-warning' >Home</Nav.Link>
-                            <Nav.Link href="services" className='text-warning'>Services</Nav.Link>
                             <Nav.Link href="about" className='text-warning'>About</Nav.Link>
                             <Nav.Link href="blog" className='text-warning'>Blogs</Nav.Link>
                             <Nav.Link href="contact" className='text-warning'>Contact Us</Nav.Link>
