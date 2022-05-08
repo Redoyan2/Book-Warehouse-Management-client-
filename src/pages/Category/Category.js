@@ -3,11 +3,11 @@ import { useNavigate } from 'react-router-dom';
 import './Category.css';
 
 const Category = ({service}) => {
-    const {id, name, img, description, price, quantity, supplier} = service;
+    const {_id, name, img, description, price, quantity, supplier} = service;
     const navigate = useNavigate();
 
-    const navigateToServiceDetail = id =>{
-        navigate(`/service/${id}`);
+    const navigateToServiceDetail = _id =>{
+        navigate(`/book/${_id}`);
     }
     return (
         <div className='service'>
@@ -18,7 +18,7 @@ const Category = ({service}) => {
             
             <p>Price: {price}</p>
             <p><small>{description}</small></p>
-            <button onClick={() => navigateToServiceDetail(id)} className='btn btn-info'>UPDATE</button>
+            <button onClick={() => navigateToServiceDetail(_id)} className='btn btn-info'>UPDATE</button>
         </div>
     );
 };
