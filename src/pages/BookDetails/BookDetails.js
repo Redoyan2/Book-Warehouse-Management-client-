@@ -15,11 +15,15 @@ const BookDetails = () => {
 
 
     return (
-        <div>
-            <h2>Welcome to Book Management of : {book.name}</h2>
+        <div className='w-50 mx-auto my-5'>
+            <h2 >Welcome to Book Management of :<br></br> 
+           Book Name: {book.name}
+            </h2>
+            <h4>Price: {book.price}</h4>
+            <h4>Supplier: {book.supplier}</h4>
             <div className='text-center'>
                 <Link to="/checkout">
-                    <button className='btn btn-info'>Proceed Checkout</button>
+                    <button className='btn btn-info'>Manage Book List</button>
                 </Link>
             </div>
         </div>

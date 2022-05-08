@@ -7,6 +7,7 @@ import Register from './pages/Authonication/Register/Register';
 import RequireAuth from './pages/Authonication/RequireAuth/RequireAuth';
 import Blog from './pages/Blog/Blog';
 import BookDetails from './pages/BookDetails/BookDetails';
+import BookManage from './pages/BookManage/BookManage';
 import Contact from './pages/Contact/Contact';
 import Categories from './pages/Home/Categories/Categories';
 import Home from './pages/Home/Home/Home';
@@ -25,7 +26,7 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
-        <Route path='/home' element={<Home></Home>}></Route>
+        <Route path='/home/' element={<Home></Home>}></Route>
         <Route path='/book/:bookId' element={<BookDetails></BookDetails>}></Route>
         <Route path='/categories' element={<Categories></Categories>}></Route>
         <Route path='/about' element={<About></About>}></Route>
@@ -43,6 +44,12 @@ function App() {
             <AddBook></AddBook>
           </RequireAuth>
         }></Route>
+        <Route path='/managebook' element={
+          <RequireAuth>
+            <BookManage></BookManage>
+          </RequireAuth>
+        }></Route>
+      
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       
