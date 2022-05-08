@@ -1,6 +1,7 @@
 
 import { Route, Routes } from 'react-router-dom';
 import About from './pages/About/About';
+import AddBook from './pages/AddBook/Addbook';
 import Login from './pages/Authonication/Login/Login';
 import Register from './pages/Authonication/Register/Register';
 import RequireAuth from './pages/Authonication/RequireAuth/RequireAuth';
@@ -35,6 +36,11 @@ function App() {
         <Route path='/checkout' element={
           <RequireAuth>
             <Manage></Manage>
+          </RequireAuth>
+        }></Route>
+        <Route path='/addbook' element={
+          <RequireAuth>
+            <AddBook></AddBook>
           </RequireAuth>
         }></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
