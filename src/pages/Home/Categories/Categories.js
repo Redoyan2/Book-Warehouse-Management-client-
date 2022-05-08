@@ -7,7 +7,7 @@ const Categories = () => {
     const [services, setServices] = useState([]);
 
     useEffect( ()=>{
-        fetch('http://localhost:5000/book')
+        fetch('http://secure-ocean-24441.herokuapp.com/book')
         .then(res => res.json())
         .then(data => setServices(data));
     }, [])

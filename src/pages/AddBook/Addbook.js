@@ -5,7 +5,7 @@ const AddBook = () => {
 
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
-        const url =`http://localhost:5000/book`;
+        const url =`http://secure-ocean-24441.herokuapp.com/book`;
         fetch(url, {
             method: 'POST',
             headers: {

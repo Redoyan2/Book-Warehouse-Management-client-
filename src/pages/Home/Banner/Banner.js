@@ -18,8 +18,8 @@ const Banner = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h3>Order and Enjoy Your favorite food </h3>
-                        <p>Minimum cost and interesting food all over the country, Hurry up!!!</p>
+                        <h3>Read Your Favourite Book </h3>
+                        <p>Get your book and spreed your knowledge</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -30,8 +30,8 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Order and Enjoy Your favorite food</h3>
-                        <p>Minimum cost and interesting food all over the country, Hurry up!!</p>
+                        <h3>Read Your Favourite Book </h3>
+                        <p>Get your book and spreed your knowledge</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -42,8 +42,8 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Order and Enjoy Your favorite food</h3>
-                        <p>Minimum cost and interesting food all over the country, Hurry up!!</p>
+                        <h3>Read Your Favourite Book </h3>
+                        <p>Get your book and spreed your knowledge</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
