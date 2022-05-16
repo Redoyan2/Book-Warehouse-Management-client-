@@ -6,14 +6,14 @@ const BookManage = () => {
     const [books, setBooks] = useState([]);
 
     useEffect(() => {
-        fetch('https//secure-ocean-24441.herokuapp.com/book')
+        fetch('https://secure-ocean-24441.herokuapp.com/book')
             .then(res => res.json())
             .then(data => setBooks(data));
     }, [])
     const handleRemove = id => {
         const proceed = window.confirm('Are you want to delete??');
         if (proceed) {
-            const url = `https//secure-ocean-24441.herokuapp.com/book/${id}`;
+            const url = `https://secure-ocean-24441.herokuapp.com/book/${id}`;
             console.log(url);
             fetch(url, {
                 method: 'DELETE'

@@ -5,7 +5,7 @@ const Manage = () => {
     const [books, setBooks] = useState([]);
 
     useEffect( ()=>{
-        fetch('https//secure-ocean-24441.herokuapp.com/book')
+        fetch('https://secure-ocean-24441.herokuapp.com/book')
         .then(res => res.json())
         .then(data => setBooks(data));
     }, [])

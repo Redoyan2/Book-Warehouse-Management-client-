@@ -4,9 +4,10 @@ import { Link, useParams } from 'react-router-dom';
 const BookDetails = () => {
     const {bookId } = useParams();
     const [book, setBook] =useState({});
+    
 
     useEffect(()=>{
-        const url = `https//secure-ocean-24441.herokuapp.com/book/${bookId}`;
+        const url =`https://secure-ocean-24441.herokuapp.com/book/${bookId}`;
         fetch(url)
         .then(res=>res.json())
         .then(data=>setBook(data))
@@ -20,6 +21,7 @@ const BookDetails = () => {
            Book Name: {book.name}
             </h2>
             <h4>Price: {book.price}</h4>
+            
             <h4>Supplier: {book.supplier}</h4>
             <div className='text-center'>
                 <Link to="/checkout">
