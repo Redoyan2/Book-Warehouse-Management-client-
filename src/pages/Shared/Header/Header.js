@@ -19,7 +19,7 @@ const Header = () => {
             <>
                 <Navbar bg="info" variant="dark" expand={true}>
                     <Container>
-                        <Navbar.Brand href="/">ALZOYA BOOKS MANAGEMENT</Navbar.Brand>
+                        <Navbar.Brand href="/">Book Warehouse Management System</Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     
                         <Nav className="ms-auto">

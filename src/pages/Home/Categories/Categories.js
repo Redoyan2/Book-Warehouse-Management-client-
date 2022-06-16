@@ -13,7 +13,7 @@ const Categories = () => {
     }, [])
 
     return (
-        <div id="services" className='container'>
+        <div  className='container'>
             <div className="row">
             <h1 className='text-primary text-center mt-5'> CATEGORIES</h1>
             <div className="services-container">

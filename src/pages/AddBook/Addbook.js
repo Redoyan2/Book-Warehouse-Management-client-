@@ -30,7 +30,7 @@ const AddBook = () => {
                 <input className='mb-2' placeholder='Price' type="number" {...register("price")} />
                 <input className='mb-2' placeholder='Quantity' type="number" {...register("quantity")} />
                 <input className='mb-2' placeholder='Photo Url' type="text" {...register("img")} />
-                <input className='btn btn-info' type="submit" value="Add Book" />
+                <input onClick={handleSubmit(onSubmit)} className='btn btn-info' type="submit" value="Add Book" />
             </form>
         </div>
     );
